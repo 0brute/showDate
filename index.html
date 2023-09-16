@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Display Date & Time</title>
+</head>
+<body class="bg-gray-200">
+    <div class="flex flex-col justify-center items-center h-screen gap-5">
+        <button id="displayBtn" onclick="displayDate()" class="border px-3 py-3 uppercase shadow-md bg-white rounded-lg select-none font-semibold">Display Date & Time</button>
+
+        <button id="clearBtn" onclick="clearDate()" class="border px-3 py-3 uppercase bg-white shadow-md rounded-lg select-none font-semibold">Clear Date</button>
+
+    <p id="showDate" class="text-center px-5 bg-white py-3 rounded-lg shadow-md select-none font-semibold"></p>
+    </div>
+
+    <div class="flex justify-center items-center">
+        <p class="absolute bottom-2 text-center text-xs font-semibold">Copyright &copy; <span id="date"></span> | <a href="https://toufiqhasankiron.com" target="_blank" class="uppercase hover:text-red-500 duration-500">Toufiq Hasan Kiron</a></p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
